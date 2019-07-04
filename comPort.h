@@ -28,10 +28,22 @@ private slots:
 
     void on_Connect_clicked();
 
+    void ChangeNameButton();
+
 private:
     Ui::ComPort *ui;
     QSerialPort *port;
-    bool isConnected;
+    bool isConnected = false;
+    void connect(bool x) {
+        if (isConnected!=x)
+        {
+            isConnected = x;
+            emit changeIsConnected();
+        }
+    }
+
+signals:
+    void changeIsConnected();
 
 };
 
