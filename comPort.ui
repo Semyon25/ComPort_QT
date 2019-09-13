@@ -526,7 +526,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Прием сообщения</string>
+        <string>Прием сообщений</string>
        </property>
       </widget>
      </item>
